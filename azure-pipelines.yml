@@ -26,10 +26,6 @@ steps:
   inputs:
     command: 'validate'
     allowTelemetryCollection: true
-- task: TerraformCLI@0
-  inputs:
-    command: 'plan'
-    allowTelemetryCollection: true
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
