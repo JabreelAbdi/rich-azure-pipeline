@@ -30,3 +30,8 @@ steps:
   inputs:
     command: 'plan'
     allowTelemetryCollection: true
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'terraform plan artefact'
+    publishLocation: 'pipeline'
