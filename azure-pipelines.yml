@@ -40,6 +40,15 @@ steps:
     targetPath: '$(System.DefaultWorkingDirectory)/tfplanny.txt'
     artifact: 'tfplanny.txt'
     publishLocation: 'pipeline'
+
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'specific'
+    project: '2e010af1-46d5-4ba9-88af-33fe7afa61aa'
+    definition: '1'
+    buildVersionToDownload: 'latest'
+    artifactName: 'tfplanny.txt'
+    targetPath: '$(System.DefaultWorkingDirectory)/tfplanny.txt'
     
     
 
