@@ -30,11 +30,12 @@ steps:
     allowTelemetryCollection: true
 - task: TerraformCLI@0
   inputs:
-    commandOptions: -var="vmsize=${{ parameters.vmsize }}"
     command: 'plan'
     environmentServiceName: 'Visual Studio Enterprise Subscription – MPN(5ddead9e-013d-441f-a427-d808cac56f31)'
     allowTelemetryCollection: true
     publishPlanResults: 'terraform plannywanny'
+    commandOptions: -out= tfplanny.txt -var="vmsize=${{ parameters.vmsize }}"
+    
 
 
 
