@@ -62,9 +62,9 @@ parameters:
   type: string
   default: 
   values:
-  - Standard_B1ls
-  - Standard_B1ms
-  - Standard_B1s
+  - E2bds_v5
+  - E2bs_v5
+  - E4bds_v5
 - name: myname
   displayName: my name
   type: string
