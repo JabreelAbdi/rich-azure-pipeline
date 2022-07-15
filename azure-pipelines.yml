@@ -54,7 +54,7 @@ steps:
   inputs:
     command: 'apply'
     allowTelemetryCollection: true
-    commandOptions: -input=false$(System.DefaultWorkingDirectory)/tfplanny.txt
+    commandOptions: '-input=false $(System.DefaultWorkingDirectory)/tfplanny.txt'
     
 parameters:
 - name: vmsize
