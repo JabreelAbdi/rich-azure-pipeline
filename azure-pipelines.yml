@@ -50,9 +50,12 @@ steps:
     artifactName: 'tfplanny.txt'
     # targetPath: '$(System.DefaultWorkingDirectory)/tfplanny.txt'
     
+- task: TerraformCLI@0
+  inputs:
+    command: 'apply'
+    allowTelemetryCollection: true
+    commandOptions: -out=$(System.DefaultWorkingDirectory)/tfplanny.txt
     
-
-
 parameters:
 - name: vmsize
   displayName: vm sizes
