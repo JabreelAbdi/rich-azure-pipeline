@@ -62,9 +62,9 @@ parameters:
   type: string
   default: 
   values:
-  - DS1_v2
-  - D2s_v3
-  - D2as_v4
+  - Standard_B1ls
+  - Standard_B1ms
+  - Standard_B1s
 - name: myname
   displayName: my name
   type: string
