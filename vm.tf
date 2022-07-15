@@ -1,7 +1,7 @@
 resource "azurerm_linux_virtual_machine" "example" {
   name                = "example-machine"
-  resource_group_name = data.azurerm_resource_group.tf-practice.name
-  location            = data.azurerm_resource_group.tf-practice.location
+  resource_group_name = azurerm_resource_group.tf-practice.name
+  location            = azurerm_resource_group.tf-practice.location
   size                = var.vmsize
   admin_username      = "adminuser"
   network_interface_ids = [
